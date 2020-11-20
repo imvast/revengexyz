@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
+body, a, a:link, #menuToggle {
+	cursor: url(../cur-default.cur), default;
+}
+a:hover, #menuToggle:hover {
+	cursor: url(../cur-hover.cur), pointer;
+}
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	background: #000000;
+	color: #FFFFFF;
+	text-shadow: 2px 2px #000000;
+	overflow: hidden;
+}
+.container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	text-align: center;
+}
+video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 140%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -9999;
+	transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
+	transition: 1s opacity;
+	filter: brightness(80%);
+}
+.overlay:after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	background: url(../img+music/overlay.png);
+	background-repeat: repeat;
+}
+h1 {
+	font-size: 5vw;
+    font-family: 'Source Sans Pro', helvetica;
+	letter-spacing: -0.035vw;
+    font-weight: 900;
+	line-height: 5vw;
+	margin: 0;
+}
+p {
+	color: #FFFFFF;
+	margin: 0;
+	font-family: 'Source Sans Pro', helvetica;
+	font-weight: 100;
+	letter-spacing: 0.15vw;
+	transition: 0.5s;
+	font-size: 1.4vw;
+}
+a {
+	color: #FFFFFF;
+	font-family: 'Source Sans Pro', helvetica;
+	font-weight: 100;
+	letter-spacing: 0.15vw;
+	transition: 0.5s;
+	text-decoration: none;
+	font-size: 1.4vw;
+}
+.ico {
+    width: 3.5vw;
+    height: 3.5vw;
+    padding-top: 1vw;
+    padding: 0.7vw;
+	transition: 0.5s;
+
+}
+.ico:hover {
+	filter: white(100%);
+	transition: 0.7s;
+}
+.kill-feed {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.kill-feed>div {
+	padding: 3px 6px 3px 6px;
+	margin: 0;
+	display: inline-block;
+	float: right;
+	clear: both;
+	border: 2px #800000 solid;
+	line-height: 18px;
+	font-size: 15px;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: right;
+	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.75);
+	margin-bottom: 6px;
+}
+.kill-feed div span {
+	vertical-align: middle;
+}
+.kill-feed div span.weapons>img {
+	border: none;
+	outline: none;
+	vertical-align: middle;
+	margin: 0px 3px;
+}
+.kill-feed div>span.player {
+	font-family: 'Bazy';
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 2px;
+}
+.kill-feed div>span.player.ct {
+	color: #4F9EDE;
+	padding-left: 2px;
+}
+.kill-feed div>span.player.t {
+	color: #C7A247;
+	padding-right: 4px;
+}
