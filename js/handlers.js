@@ -17,11 +17,6 @@ $(function() {
         animIndex++
     }
     window.setInterval(doInverseSpinZeroPitch, 100);
-    var tKillNames = ["IchHackeNet"];
-    var ctKillNames = ["#"];
-    var weapons = ["ssg08", "ak47", "deagle", "g3sg1", "m4a4"];
-    var $killFeedContainer = $('.kill-feed');
-    var $killFeedElement = $('.kill-feed > div').hide();
 
     function handleKillFeed() {
         var $newFeedElement = $killFeedElement.clone();
