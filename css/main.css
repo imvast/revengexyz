@@ -89,11 +89,6 @@ a {
 	filter: white(100%);
 	transition: 0.7s;
 }
-.kill-feed {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-}
 .kill-feed>div {
 	padding: 3px 6px 3px 6px;
 	margin: 0;
@@ -112,12 +107,6 @@ a {
 }
 .kill-feed div span {
 	vertical-align: middle;
-}
-.kill-feed div span.weapons>img {
-	border: none;
-	outline: none;
-	vertical-align: middle;
-	margin: 0px 3px;
 }
 .kill-feed div>span.player {
 	font-family: 'Bazy';
