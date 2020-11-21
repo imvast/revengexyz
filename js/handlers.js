@@ -17,16 +17,6 @@ $(function() {
         animIndex++
     }
     window.setInterval(doInverseSpinZeroPitch, 100);
-
-    function handleKillFeed() {
-        var $newFeedElement = $killFeedElement.clone();
-        $newFeedElement.find('.weapons img:first-child').attr('src', 'img+music/' + weapons[Math.floor(Math.random() * weapons.length)] + '.png');
-		$newFeedElement.find('.t').text(tKillNames[Math.floor(Math.random() * tKillNames.length)]);
-        $newFeedElement.find('.ct').text(ctKillNames[Math.floor(Math.random() * ctKillNames.length)]);
-        $killFeedContainer.append($newFeedElement.show().delay(100).fadeOut(1000, function() {
-            $(this).remove()
-        }))
-    }
     window.setInterval(handleKillFeed, 250)
 	document.onkeydown = function(e) { 
 	if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly. 
