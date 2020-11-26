@@ -1,0 +1,1 @@
+$(document).ready(()=>{M.AutoInit(),setTimeout(()=>$("#corona-mount").html('<ul class="corona"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>'),1e3)}),$(document).on("click",'a[href^="#"]',function(l){l.preventDefault(),$("html, body").animate({scrollTop:$($.attr(this,"href")).offset().top - 125},500)});
