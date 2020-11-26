@@ -1,0 +1,350 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"; #app-mount {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(90deg,#050d1b,#001b4d,#001b4d,#050d1b);
+    background-size: 100% 100%;
+    font-family: "Poppins",sans-serif
+}
+
+#navbar-mount {
+    z-index: 2000
+}
+
+#sidenav-mount {
+    z-index: 2001
+}
+
+#container {
+    margin: 0;
+    padding: 0
+}
+
+#footer-mount {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+main {
+    flex: 1 0 auto
+}
+
+a:hover {
+    text-decoration: none;
+    color: currentColor
+}
+
+code {
+    color: #18ffff
+}
+
+blockquote {
+    border-left: 5px solid #18ffff
+}
+
+.btn,.btn-large,.btn-small {
+    text-transform: none;
+    z-index: 2
+}
+
+.btn:hover {
+    text-decoration: none;
+    color: currentColor
+}
+
+.rounded {
+    border-radius: 15px!important
+}
+
+.icon-block {
+    padding: 0 15px
+}
+
+.icon-block .material-icons {
+    font-size: inherit
+}
+
+.tabs .indicator {
+    background-color: #0FF
+}
+
+.parallax-container {
+    min-height: 600px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+    position: relative
+}
+
+.parallax-logo {
+    text-align: center;
+    position: relative;
+    max-width: 178px;
+    height: 178px;
+    animation: shields 15s ease-in-out infinite;
+    border-radius: 50%
+}
+
+@keyframes shields {
+    10% {
+        box-shadow: 1px 1px 2px black,0 0 25px cyan,0 0 5px blue
+    }
+
+    20% {
+        box-shadow: none
+    }
+
+    30% {
+        box-shadow: 1px 1px 2px black,0 0 25px cyan,0 0 5px blue
+    }
+
+    40% {
+        box-shadow: none
+    }
+
+    50% {
+        box-shadow: 1px 1px 2px black,0 0 25px cyan,0 0 5px blue
+    }
+
+    60% {
+        box-shadow: none
+    }
+
+    70% {
+        box-shadow: 1px 1px 2px black,0 0 25px cyan,0 0 5px blue
+    }
+
+    80% {
+        box-shadow: none
+    }
+
+    90% {
+        box-shadow: 1px 1px 2px black,0 0 25px cyan,0 0 5px blue
+    }
+
+    100% {
+        box-shadow: none
+    }
+}
+
+.parallax-container .section {
+    width: 100%;
+    position: relative
+}
+
+.icon-block {
+    padding: 0 15px
+}
+
+.icon-block .material-icons {
+    font-size: inherit
+}
+
+.shield {
+    z-index: 2;
+    position: relative
+}
+
+.corona {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 0
+}
+
+.corona li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 128px;
+    height: 128px;
+    background-image: url(/assets/img/Corona.png);
+    background-size: 100% 100%;
+    animation: animate 25s ease infinite;
+    bottom: -150px
+}
+
+.corona li:active {
+    display: none;
+    border: none
+}
+
+.corona li:nth-child(1) {
+    left: 25%;
+    animation-delay: 0;
+    animation-duration: 10s
+}
+
+.corona li:nth-child(2) {
+    left: 10%;
+    animation-delay: 0;
+    animation-duration: 15s
+}
+
+.corona li:nth-child(3) {
+    left: 20%;
+    animation-delay: 2s;
+    animation-duration: 10s
+}
+
+.corona li:nth-child(4) {
+    left: 30%;
+    animation-delay: 3s;
+    animation-duration: 5s
+}
+
+.corona li:nth-child(5) {
+    left: 40%;
+    animation-delay: 5s;
+    animation-duration: 10s
+}
+
+.corona li:nth-child(6) {
+    left: 50%;
+    animation-delay: 2s;
+    animation-duration: 15s
+}
+
+.corona li:nth-child(7) {
+    left: 60%;
+    animation-delay: 2s;
+    animation-duration: 10s
+}
+
+.corona li:nth-child(8) {
+    left: 70%;
+    animation-delay: 3s;
+    animation-duration: 8s
+}
+
+.corona li:nth-child(9) {
+    left: 80%;
+    animation-delay: 5s;
+    animation-duration: 10s
+}
+
+.corona li:nth-child(10) {
+    left: 90%;
+    animation-delay: 1s;
+    animation-duration: 15s
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        z-index: 1;
+        opacity: 1
+    }
+
+    26% {
+        border: none;
+        border-radius: 50%
+    }
+
+    27% {
+        opacity: 1;
+        border: none;
+        border: 2px solid #0ff;
+        border-radius: 50%
+    }
+
+    28% {
+        border: none;
+        border-radius: 50%
+    }
+
+    29% {
+        border: 2px solid #0ff;
+        border-radius: 50%
+    }
+
+    30% {
+        opacity: 0
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        z-index: 0;
+        left: 38%
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: #000
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #2980b9;
+    box-shadow: inset 0 0 20px #2980b9
+}
+
+::-webkit-scrollbar-track {
+    margin-top: 80px;
+    border-radius: 10px
+}
+
+.preloader-wrapper {
+    margin: auto
+}
+
+.logo-title {
+    margin-left: 2rem;
+    max-height: 4rem;
+    max-width: 9rem
+}
+
+.discord-logo {
+    max-width: 1.3rem;
+    height: 1.3rem
+}
+
+.nav-user-icon {
+    max-width: 48px;
+    max-height: 48px
+}
+
+.sidenav-user-icon {
+    max-width: 32px;
+    max-height: 32px
+}
+
+.guild-image {
+    width: 148px;
+    height: 148px
+}
+
+.guild {
+    margin: 0;
+    padding: 0
+}
+
+.border-cyan {
+    --cyan:#0fe}
+
+.hover-bottom {
+    border-bottom: 3px solid transparent
+}
+
+.hover-bottom:hover {
+    border-bottom: 3px solid var(--cyan)
+}
+
+.hover-right {
+    border-right: 3px solid transparent
+}
+
+.hover-right:hover {
+    border-right: 3px solid var(--cyan)
+}
